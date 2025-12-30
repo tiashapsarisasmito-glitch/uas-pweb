@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portofolio Pink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Websait Saya</h1>
+        <p>Halaman Utana Websait Sederhana</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="openMenu('home')">Home</a></li>
+            <li><a href="javascript:void(0)" onclick="openMenu('profil')">Profil</a></li>
+            <li><a href="javascript:void(0)" onclick="openMenu('karya')">Karya & Project</a></li>
+            <li><a href="javascript:void(0)" onclick="openMenu('media')">Media</a></li>
+            <li><a href="javascript:void(0)" onclick="openMenu('informasi')">Informasi</a></li>
+            <li><a href="javascript:void(0)" onclick="openMenu('kontak')">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="menu-content active">
+            <h2>Pemrograman Web dengan HTML</h2>
+            <p>Selamat datang! Website ini dirancang untuk menunjukkan hasil pembelajaran pemrograman web dengan struktur yang rapi dan navigasi yang interaktif.</p>
+            <div class="welcome-banner">
+                <p>Silakan jelajahi menu di atas untuk mengenal saya lebih jauh.</p>
+            </div>
+        </section>
+
+        <section id="profil" class="menu-content">
+            <h2>Profil Saya</h2>
+            <div class="profile-card">
+                <img src="Profil saya.jpg" alt="Foto Profil">
+                <h3>Tias Hapsari Sasmtio</h3>
+                <p class="jurusan">Jurusan: Sistem Informasi</p>
+                <p>Halo! Saya Sedang Belajar Pemrograman.</p>
+            </div>
+        </section>
+
+        <section id="karya" class="menu-content">
+            <h2>Karya & Project</h2>
+            <p>Klik pada kartu untuk melihat detail project:</p>
+            <div class="grid-container">
+                <div class="card" onclick="alert('Membuka Project 1: E-Commerce App')">
+                    <img src="Img.karya1.jpg" alt="P1">
+                    <h4>Websait Layout Moderen</h4>
+                
+                </div>
+                <div class="card" onclick="alert('Membuka Project 2: UI Design')">
+                    <img src="karya2.jpg" alt="P2">
+                    <h4> Profil Saya</h4>
+                </div>
+                <div class="card" onclick="alert('Membuka Project 3: Portfolio')">
+                    <img src="karya3.jpg" alt="P3">
+                    <h4> Array</h4>
+                </div>
+                <div class="card" onclick="alert('Membuka Project 4: Logo')">
+                    <img src="karya4.jpg" alt="P4">
+                    <h4>MyPortfolio</h4>
+                </div>
+                <div class="card" onclick="alert('Membuka Project 5: Dashboard')">
+                    <img src="karya5.jpg" alt="P5">
+                    <h4>Menghasilkan Audio dan Vidieo</h4>
+                </div>
+                <div class="card" onclick="alert('Membuka Project 6: Photography')">
+                    <img src="karya6.jpg" alt="P6">
+                    <h4>Pemrograman Web Dengan Html</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="media" class="menu-content">
+            <h2>Koleksi Media</h2>
+            <div class="media-grid">
+                <img src="mediia1.jpg" alt="Galeri 1">
+                <img src="mediia2.jpg" alt="Galeri 2">
+                <div class="video-box">
+                    <h3>Video Tutorial & Presentasi</h3>
+                    <video controls width="100%">
+                        <source src="Justin Bieber - Baby ft. Ludacris.mp4" type="video/mp4">
+                        Browser anda tidak mendukung tag video.
+                    </video>
+                </div>
+            </div>
+        </section>
+           <section id="informasi" class="menu-content">
+    <h2>Informasi Kuliah PWeb</h2>
+    <div class="info-box">
+        <div class="info-item">
+            <strong>🚀 Materi Saat Ini</strong>
+            <p>Sedang mendalami materi CSS Layouting, Grid System, dan sedikit sentuhan JavaScript Interaktif untuk navigasi.</p>
+        </div>
+        <div class="info-item">
+            <strong>📅 Agenda Semester 1</strong>
+            <p>Persiapan UAS: Membuat Website Portofolio Pribadi yang responsif dan interaktif.</p>
+        </div>
+        <div class="info-item">
+            <strong>🛠️ Tools yang Digunakan</strong>
+            <p>Visual Studio Code, Google Chrome DevTools, dan GitHub untuk penyimpanan source code.</p>
+        </div>
+        <div class="info-item">
+            <strong>📚 Referensi Belajar</strong>
+            <p>W3Schools, MDN Web Docs, dan channel YouTube 'Web Programming UNPAS'.</p>
+        </div>
+    </div>
+</section>
+
+        <section id="kontak" class="menu-content">
+            <h2>Kontak Kami</h2>
+            <p>Silakan hubungi saya melalui saluran di bawah ini:</p>
+            <ul style="list-style: none; padding: 0;">
+                <li>📧 Email: tiashapsarisasmito@gmail.com
+                <li>📸 Instagram:ti444ss
+                <li>📍 Lokasi:Bojongsar,Pondok Petir
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        function openMenu(menuName) {
+            var i;
+            var sections = document.getElementsByClassName("menu-content");
+            // Sembunyikan semua section
+            for (i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+                sections[i].classList.remove("active");
+            }
+            // Tampilkan section yang dipilih
+            var selected = document.getElementById(menuName);
+            selected.style.display = "block";
+            // Tambahkan sedikit delay agar animasi terasa
+            setTimeout(() => {
+                selected.classList.add("active");
+            }, 10);
+        }
+    </script>
+
+</body>
+</html>

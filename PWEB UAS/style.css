@@ -1,0 +1,188 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #fff5f7; /* Background pink pucat */
+}
+
+header {
+    background-color: #ff85a2; /* Pink Cerah */
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Navigasi */
+nav {
+    background-color: #ffb7c5;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/* Animasi Hover Menu */
+nav ul li a {
+    text-decoration: none;
+    color: #8b004b;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+nav ul li a:hover {
+    background-color: #ff85a2;
+    color: white;
+    transform: translateY(-3px); /* Sedikit naik saat hover */
+    box-shadow: 0 4px 8px rgba(255, 133, 162, 0.4);
+}
+
+/* Pengaturan Konten */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 400px;
+    border: 2px solid #ffb7c5;
+}
+
+/* Sembunyikan menu secara default */
+.menu-content {
+    display: none;
+    animation: fadeIn 0.5s; /* Animasi muncul halus */
+}
+
+/* Tampilkan Home saat pertama buka */
+.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Profil */
+.profile-card {
+    text-align: center;
+}
+
+.profile-card img {
+    width: 150px;
+    border-radius: 50%; /* Membuat foto bulat */
+    border: 5px solid #ff85a2;
+}
+
+/* Grid Project */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    border: 1px solid #ffb7c5;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: #fff0f3;
+    border-color: #ff85a2;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Media */
+.media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.media-grid img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.video-box {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+/* Style tambahan untuk bagian Informasi */
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-item {
+    background-color: #fff0f3;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #ff85a2;
+}
+
+.info-item strong {
+    color: #c2185b;
+    font-size: 1.1em;
+}
+
+/* Mempercantik menu navigasi */
+nav ul li a {
+    text-decoration: none;
+    color: #d81b60;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 20px;
+}
+
+/* Animasi menu saat hover */
+nav ul li a:hover {
+    background-color: #ff85a2;
+    color: white;
+    transform: scale(1.1) rotate(2deg); /* Efek goyang sedikit */
+}
+
+/* Detail Foto Profil */
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Foto Bulat */
+    border: 5px solid #ffb7c5;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.jurusan {
+    background: #ff85a2;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 50px;
+    margin-top: 5px;
+}
