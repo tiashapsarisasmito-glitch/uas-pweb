@@ -6,5 +6,4 @@
 ![image alt](https://github.com/tiashapsarisasmito-glitch/uas-pweb/blob/e92cf5179fb92974178190c75bd534eaceaeb539/PWEB%20UAS/karya4.jpg)
 ![image alt](https://github.com/tiashapsarisasmito-glitch/uas-pweb/blob/9dbc7d33d384aa4880bd1b33605a8cbd23332bb2/PWEB%20UAS/karya5.jpg)
 ![image alt](https://github.com/tiashapsarisasmito-glitch/uas-pweb/blob/6aa6154b5b1c2a54ccd05eb8d71e2bef2d27ba33/PWEB%20UAS/karya6.jpg)
-![image alt](https://github.com/tiashapsarisasmito-glitch/uaspweb/blob/c8a3b04528aac15d0e0ec3f9eb0878c43010f3b5/PWEB%20UAS/Profil%20saya.jpg)
-![image alt](https://github.com/tiashapsarisasmito-glitch/uas-pweb/blob/06a25259507d344788d2a15f98dbb2466891797f/PWEB%20UAS/Justin%20Bieber%20-%20Baby%20ft.%20Ludacris.mp4)
+![image alt](https://github.com/tiashapsarisasmito-glitch/uas-pweb/blob/2545a904cfe35db5f123eb6fbc071cc8cd0e6f27/PWEB%20UAS/Profil%20saya.jpg)
